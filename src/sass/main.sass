@@ -1,0 +1,280 @@
+@import "bourbon"
+@import "vars"
+@import "libs"
+
+//Custom styles here
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html
+	overflow-x: hidden
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: $roboto	
+	overflow-x: hidden
+.hidden
+	display: none
+.f-left
+	float: left
+.f-right
+	float: right
+h1,h2,h3,h4,h5,h6
+	font-family: $gillsans
+	letter-spacing: 2px
+	padding: 0
+	margin: 0
+	color: $heads
+p,span
+	padding: 0
+	margin: 0
+h1
+	font-size: em(60px)
+h2
+	font-size: em(50px)
+h3
+	font-size: em(44px)
+h4
+	font-size: em(38px)
+h5
+	font-size: em(24px)
+h6
+	font-size: em(20px)
+
+.btn
+	margin-top: em(16px)
+	display: inline-block
+	color: #fff
+	font-size: em(14px)
+	padding: em(16px) em(22px)
+	line-height: em(14px)
+	text-transform: uppercase
+	font-weight: bold
+	border-radius: 7px
+	transition: all .15s ease
+	color: #fff
+	&:hover,&:focus
+		color: #fff
+		text-decoration: none
+	&-blue
+		background-color: $btn-blue
+		color: #fff
+		&:hover, &:focus
+			background-color: lighten($btn-blue, 7%)
+		&:active,
+			background-color: darken($btn-blue, 7%)
+	&-green
+		background-color: $btn-green
+		&:hover,&:focus
+			background-color: lighten($btn-green, 7%)
+			
+		&:active
+			background-color: darken($btn-green, 7%)
+
+
+section, footer
+	padding: 0 0 30px
+	a
+	 color: $accent
+	 &:hover,&:focus
+	 	color: $accent
+	&.dark
+		h1,h2,h3,h4,h5,h6,a,p
+			color: #fff
+		a
+		 color: #fff
+		 &:hover
+		 	color: #fff
+
+.section-stat
+	padding-top: 150px
+	padding-bottom: 170px
+	background-image: url("../img/statisticbg.jpg")
+	position: relative
+	background-position: top center
+	background-size: cover
+	color: #fff
+	overflow: hidden
+	&:after
+		content: ''
+		background-color: #fff
+		position: absolute
+		width: 105%
+		height: 104px
+		top: 510px
+		left: -5px
+		transform: skewY(3deg)
+		border: 3px solid #fff	
+	.stat-head
+		text-align: center
+	.stat-content
+		text-align: center
+		margin-top: 60px
+		.statistics-box
+			display: table-row
+			width: 300px
+			.box-icon
+				display: table-cell
+				vertical-align: top
+				width: 100px
+				height: 100px
+				border: 4px solid #fff
+				border-radius: 50%
+				img[src="img/icon-users.svg"]
+					position: absolute
+					height: 79px
+					width: 74px
+					left: 29px
+					top: 8px
+				img[src="img/icon-handshake.svg"]
+					position: absolute
+					height: 95px
+					width: 101px
+					left: 14px
+					top: 4px
+				img[src="img/icon-search.svg"]
+					position: absolute
+					height: 68px
+					width: 68px
+					left: 29px
+					top: 16px
+			.box-text
+				margin: 0
+				padding: 0
+				display: table-cell
+				padding-left: 10px
+				text-align: left
+				span
+					font-size: em(48px)
+					font-weight: bold
+					line-height: 48px
+				p 
+					font-weight: bold
+					font-size: em(20px)
+					line-height: 24px
+					
+.targets
+	position: relative
+	&:after
+		content: ''
+		background-color: #fff
+		position: absolute
+		width: 100%
+		height: 140px
+		top: 342px
+		left: 0px
+		transform: skewY(-3deg)
+		border: 8px solid #fff
+		z-index: 1
+	.btn-wrap
+		position: absolute
+		z-index: 2
+	h6
+		font-size: em(24px)
+		color: $text
+		margin-top: 30px
+	p 
+		position: relative
+		z-index: 2
+		margin: 22px 0
+		font-size: em(20px)
+	.btn
+		margin-right: 12px
+	a#github
+		display: block
+		margin-top: -88px
+		transition: all .15s ease
+		font-size: em(174px)
+		&:hover
+			color: lighten($btn-blue, 7%)
+
+.progress-wrap
+	p
+		margin-top: 5px
+		margin-bottom: 0
+		font-size: em(18px)
+	p:last-child
+		font-size: em(24px)
+		font-weight: bold
+	.progress-main
+		margin-top: 20px
+		background: #d1edff
+		border-radius: 8px
+		.bar 
+				height: 12px
+	.progress
+		.bar 
+			border-radius: 8px
+			background-color: $accent
+			background-size: 1px 2000px
+			background-position: top left
+			background-repeat: repeat-x
+			transition: all 0.5s ease-in-out
+
+.main-footer	
+	padding-top: 170px
+	min-height: 500px
+	background-image: url("../img/footerbg.jpg")
+	background-size: cover
+	.footer-content
+		text-align: center
+		h2
+			font-size: em(44px)
+		.copyright
+			position: absolute
+			width: 300px
+			bottom: 10px
+			right: 25%
+			left: 50%
+			color: #fff
+			font-family: $gillsans
+			margin-left: -150px
+
+	ul.socials
+		list-style-type: none
+		padding: 0
+		margin: 50px 0
+		vertical-align: middle
+		li
+			display: inline-block
+			font-size: em(60px)
+			transition: all .25s ease
+			transform-origin: center center
+			&:nth-child(2)
+				font-size: em(55px)
+			&:hover
+				transform: scale(1.1)
+			&.telegram
+				position:	relative
+				top: -5px
+				height: 80px
+				width: 80px
+				img
+					width: 55px
+					height: 55px
+
+
+@import "media"

@@ -1,0 +1,26 @@
+{
+  "name": "goodshare.js",
+  "version": "3.2.8",
+  "main": [
+    "./goodshare.js"
+  ],
+  "ignore": [
+    ".idea",
+    ".gitignore",
+    "package.json",
+    "gulpfile.js",
+    ".editorconfig",
+    "test/"
+  ],
+  "homepage": "https://github.com/enjoyiacm/goodshare.js",
+  "_release": "3.2.8",
+  "_resolution": {
+    "type": "version",
+    "tag": "3.2.8",
+    "commit": "84a373676c11604641a41411a53682ce0f862c44"
+  },
+  "_source": "https://github.com/enjoyiacm/goodshare.js.git",
+  "_target": "^3.2.8",
+  "_originalSource": "goodshare",
+  "_direct": true
+}
